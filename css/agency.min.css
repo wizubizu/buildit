@@ -174,6 +174,105 @@ body{overflow-x:hidden;font-family:'Roboto Slab','Helvetica Neue',Helvetica,Aria
 /*Horizontal Sliding for text showing end*/
 
 
+.__formbg{
+  background: #f8f8f89c;
+    padding: 39px 10px;
+    margin: 20px 0;
+}
+
+.__request-quote{
+  text-align: center;
+  font-weight: 100;
+}
+.__question{
+  text-align:center;
+  font-size: 13px;
+}
+
+/*display radio btn*/
+.none {
+    display:none;
+}
+/*display radio btn end*/
+
+.__form label{
+  font-size: 12px;
+}
+
+.__form .form-control {
+    font-size: 11px;
+    padding: 11px;
+}
+
+
+/* The radio */
+.radio {
+ 
+     display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+/* Hide the browser's default radio button */
+.radio input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkround {
+
+    position: absolute;
+    top: 6px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff ;
+    border-color:#4AB3F4;
+    border-style:solid;
+    border-width:2px;
+     border-radius: 50%;
+}
+
+
+/* When the radio button is checked, add a blue background */
+.radio input:checked ~ .checkround {
+    background-color: #fff;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkround:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radio input:checked ~ .checkround:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radio .checkround:after {
+     left: 2px;
+    top: 2px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background:#4AB3F4;
+    
+ 
+}
+
+
 /*********************** Demo - 10 *******************/
 .box1 img,.box1:after,.box1:before{width:100%;transition:all .3s ease 0s}
 .box1 .icon,.box2,.box3,.box4,.box5 .icon li a{text-align:center}
